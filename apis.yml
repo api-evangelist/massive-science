@@ -1,8 +1,24 @@
 aid: massive-science
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/massive-science.png
 name: Massive Science
-description: Massive Science is a company surfaced as a portfolio company of bloomberg-beta and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Massive Science is a science communication platform and media company that
+  publishes stories, explainers, lab notes, and reports about current research, written
+  and edited by working scientists. It runs the Massive Science Consortium, a training
+  network of scientist-writers, alongside editorial content, newsletters, a community
+  discussion forum, and a shop. Surfaced as a portfolio company of Bloomberg Beta and
+  added to the API Evangelist network; enrichment finds no public API, developer portal,
+  or machine-readable interface beyond a public RSS feed.
 url: https://raw.githubusercontent.com/api-evangelist/massive-science/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Science
+- Media
+- Publishing
+- Science Communication
+- Journalism
+- Content
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +44,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/massive-science-domain-security.yml
 - type: Website
   url: https://massivesci.com/
+- type: Blog
+  url: https://massivesci.com/feed.xml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
